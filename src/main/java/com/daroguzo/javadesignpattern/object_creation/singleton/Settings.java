@@ -15,4 +15,8 @@ public class Settings implements Serializable {
         return InstanceHolder.instance;
     }
 
+    protected Object readResolve() {
+        return getInstance();
+    }
+
 }
