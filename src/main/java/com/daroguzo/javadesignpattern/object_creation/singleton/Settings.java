@@ -1,6 +1,8 @@
 package com.daroguzo.javadesignpattern.object_creation.singleton;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 
     private Settings() {}
 
