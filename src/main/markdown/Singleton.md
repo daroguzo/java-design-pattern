@@ -119,18 +119,3 @@ public static Settings getInstance() {
 ```
 
 - volatile, synchronized 키워드 없이 동시성 해결
-
-## **Factory method 패턴**
-
-### 구체적으로 어떤 것을 만들지는 서브 클래스가 정한다.
-
-- 팩토리 메소드 패턴을 적용했을 때의 장단점은?
-    - 기존 코드를 건드리지 않고 새로운 인스턴스를 다른 방법으로 얼마든지 확장 가능  > Product, Creator 간에 느슨한 결합
-    - 단점: 각자의 역할을 나누기 때문에 클래스 증가는 불가피
-- “확장에 열려있고 변경에 닫혀있는 객체 지향 원칙”을 설명하세요.(OCP)
-    - 변경에 닫혀있다: 기존 코드를 변경하지 않는다.
-- 자바 8에 추가된 default 메소드에 대해 설명하세요.
-    - interface에 기본 구현체 선언 가능
-    - Java9 interface private
-
-## Abstract Factory 패턴
