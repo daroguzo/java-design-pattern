@@ -1,11 +1,34 @@
 package com.daroguzo.javadesignpattern.object_creation.factory_method;
 
+import com.daroguzo.javadesignpattern.object_creation.abstract_factory.Anchor;
+import com.daroguzo.javadesignpattern.object_creation.abstract_factory.Wheel;
+
 public class Ship {
     private String name;
 
     private String color;
 
     private String logo;
+
+    public Wheel getWheel() {
+        return wheel;
+    }
+
+    public void setWheel(Wheel wheel) {
+        this.wheel = wheel;
+    }
+
+    public Anchor getAnchor() {
+        return anchor;
+    }
+
+    public void setAnchor(Anchor anchor) {
+        this.anchor = anchor;
+    }
+
+    private Wheel wheel;
+
+    private Anchor anchor;
 
     public String getName() {
         return name;
